@@ -94,23 +94,23 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'kaaj',
-    title: 'Kaaj',
+    title: 'Kaaj The Job',
     kicker: 'AI job matching for Bangladesh · Spring Boot & PostgreSQL',
-    outcome: 'A voice-first, Bangla-first job platform: people say what they can do in their own words and get matched to verified jobs nearby. I’m building the employer side.',
+    outcome: 'A voice-first, Bangla-first job platform: people say what they can do in their own words and get matched to verified jobs nearby. My API covers the employer side: job posts and employer verification.',
     tags: ['Backend'],
-    role: 'Backend developer (employer side)',
-    context: 'CSE471 team project, Group 08 · team of 3',
+    role: 'Backend developer',
+    context: 'CSE471 individual assignment',
     year: 'Fall 2026',
     stack: ['Java 25', 'Spring Boot 4.1', 'Spring Data JPA', 'PostgreSQL 18', 'Postman'],
     facts: [
-      { label: 'Role', value: 'Backend developer (employer side)' },
+      { label: 'Role', value: 'Backend developer (individual)' },
       { label: 'Framework', value: 'Spring Boot 4.1 · Java 25' },
       { label: 'Database', value: 'PostgreSQL 18' },
       { label: 'Year', value: 'Fall 2026' },
     ],
     goal: {
-      title: 'What Kaaj is trying to do',
-      body: 'Most jobs in Bangladesh are never advertised. They move through brokers, wall notices and Facebook groups, where the wage is often missing and fake recruiters charge “processing fees”. Kaaj (কাজ, “work”) aims to turn a 90-second voice note in Bangla into a profile, match people to verified jobs nearby and explain why, and block any post that asks job seekers for money. Job seekers never pay.',
+      title: 'My end goal with Kaaj',
+      body: 'Most jobs in Bangladesh are never advertised. They move through brokers, wall notices and Facebook groups, where the wage is often missing and fake recruiters charge “processing fees”. My end goal is Kaaj (কাজ, “work”) as a full platform: a 90-second voice note in Bangla becomes a profile, people are matched to verified jobs nearby with the reasons shown, and any post that asks job seekers for money is blocked. Job seekers never pay.',
     },
     architecture: [
       { layer: 'Backend', tech: 'Java 25 · Spring Boot 4.1 · Spring Modulith (a modular monolith) · Spring Data JPA' },
@@ -121,7 +121,7 @@ export const projects: Project[] = [
     next: [
       { title: 'AI job-post assistant', body: 'An employer types one sentence in Bangla, Banglish or English. Gemini drafts the full post in both languages as a typed JobDraft record, and Java rules flag a missing wage, fee requests, days over 8 hours and phone numbers.' },
       { title: 'Scam screening & moderation', body: 'Every post passes Bangla and English rule checks before it goes live (block, review or publish), with user reports and an admin queue.' },
-      { title: 'Shared setup', body: 'User roles, the admin account, and one file-upload service with real file-type checks that every feature uses.' },
+      { title: 'Platform setup', body: 'User roles, an admin account, and one file-upload service with real file-type checks for photos, documents and voice notes.' },
     ],
     metrics: [
       { value: '11', label: 'REST endpoints' },

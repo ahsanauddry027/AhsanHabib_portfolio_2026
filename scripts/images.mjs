@@ -18,6 +18,15 @@ await icon(32).toFile(out('favicon-32.png'));
 await icon(180).toFile(out('apple-touch-icon.png'));
 await icon(512).toFile(out('logo-512.png'));
 
+// Research section: reading the bound thesis (IMG_2689.JPG), 3:4
+const thesisSrc = path.join(root, 'IMG_2689.JPG');
+if (existsSync(thesisSrc)) {
+  const thesis = () => sharp(thesisSrc).rotate().extract({ left: 60, top: 216, width: 2862, height: 3816 });
+  await thesis().resize(900, 1200).webp({ quality: 80 }).toFile(out('ahsan-thesis.webp'));
+  await thesis().resize(900, 1200).jpeg({ quality: 80, mozjpeg: true }).toFile(out('ahsan-thesis.jpg'));
+  await thesis().resize(600, 800).webp({ quality: 78 }).toFile(out('ahsan-thesis-600.webp'));
+}
+
 if (!existsSync(src)) {
   console.log('logo icons written; IMG_2772.JPG not found, so the photos were left as they are');
   process.exit(0);
