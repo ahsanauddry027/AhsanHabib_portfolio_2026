@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+# the full-size original photo stays local (it may carry location data); the site uses the resized copies in public/
+IMG_2772.JPG
+# the CV the site serves lives in public/; this root copy is just the original
+/Ahsan_Habib_CV.pdf
