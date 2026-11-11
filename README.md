@@ -38,9 +38,7 @@ Every claim on the site comes from my CV or from a repo README on GitHub. Keep i
 
 ## Deploy
 
-Every push to `main` builds the site and publishes it to GitHub Pages ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)).
-
-One-time setup: **Settings → Pages → Build and deployment → Source: GitHub Actions**. Then re-run the workflow from the **Actions** tab, or push again.
+Every push to `main` builds the site and publishes `dist/` to the **`gh-pages`** branch ([`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)), which GitHub Pages serves. Nothing to set up: GitHub enabled Pages from `gh-pages` automatically. The site updates about a minute after each push.
 
 The build uses a relative base path, so the same `dist/` also works on Vercel, Netlify or any static host. If the address changes, update `og:url`, `og:image` and the canonical link in `index.html`.
 
