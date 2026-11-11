@@ -1,5 +1,6 @@
 // Everything the site says lives in this file.
-// Sources: D:\CV (cv-content.js + HANDOFF.md, verified facts) and the READMEs at github.com/ahsanauddry027.
+// Sources: the CV (github.com/ahsanauddry027/AhsanHabib_CV, LaTeX; D:\CV\HANDOFF.md has the verified facts behind it)
+// and the READMEs at github.com/ahsanauddry027.
 // Rule carried over from the CV project: do not add numbers, dates or skills that those sources don't back.
 
 import { asset } from '../lib/asset';

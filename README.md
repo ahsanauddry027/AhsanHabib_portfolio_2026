@@ -33,7 +33,7 @@ Every claim on the site comes from my CV or from a repo README on GitHub. Keep i
 | The API console responses | `routes` in `src/components/ApiConsole.tsx` |
 | Colours, fonts, spacing | the tokens at the top of `src/styles.css` |
 | The logo | `public/logo.svg` and `src/components/Logo.tsx`, then `npm run images` |
-| The CV that "Download CV" serves | replace `public/Ahsan_Habib_CV.pdf` |
+| The CV that "Download CV" serves | edit the LaTeX in [AhsanHabib_CV](https://github.com/ahsanauddry027/AhsanHabib_CV) (its Action builds the PDF), then copy that `Ahsan_Habib_CV.pdf` over `public/Ahsan_Habib_CV.pdf` |
 | Photos and the social share image | `npm run images` (needs the original `IMG_2772.JPG`, which is not in the repo) |
 
 ## Deploy
