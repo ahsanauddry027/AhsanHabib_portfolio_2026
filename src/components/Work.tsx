@@ -160,7 +160,10 @@ const FILTERS: ('All' | Tag)[] = ['All', 'Backend', 'Systems', 'Embedded'];
 
 export function Work() {
   const [filter, setFilter] = useState<'All' | Tag>('All');
-  const [open, setOpen] = useState<string | null>('kaaj');
+  // Kaaj's case study starts open on desktop; on phones every case study starts closed to keep the page short
+  const [open, setOpen] = useState<string | null>(() =>
+    typeof window !== 'undefined' && window.matchMedia('(min-width: 861px)').matches ? 'kaaj' : null,
+  );
   const shown = projects.filter((p) => filter === 'All' || p.tags.includes(filter));
   const count = (f: 'All' | Tag) => (f === 'All' ? projects.length : projects.filter((p) => p.tags.includes(f)).length);
 

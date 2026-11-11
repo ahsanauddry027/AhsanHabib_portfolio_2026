@@ -76,7 +76,7 @@ export function Contact() {
         </Reveal>
         <div className="contact__grid">
           <Reveal delay={0.1}>
-            <p style={{ color: 'var(--fg-muted)', maxWidth: 560, marginBottom: 22 }}>
+            <p className="contact__lede">
               I’m looking for backend and software engineering roles as I graduate in Fall 2026. The fastest way to reach me is email.
             </p>
             <div className="mail">
