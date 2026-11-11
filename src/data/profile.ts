@@ -22,7 +22,7 @@ export const profile = {
   status: 'Open to backend roles',
   statusDetail: 'Graduating Fall 2026',
   intro:
-    'Final-year CSE student at BRAC University (CGPA 3.76). I design REST APIs in Spring Boot and Node.js, model the data in PostgreSQL, MySQL and MongoDB, and secure what I ship.',
+    'Final-year CSE student at BRAC University. I design REST APIs in Spring Boot and Node.js, model the data in PostgreSQL, MySQL and MongoDB, and secure what I ship.',
 } as const;
 
 export interface Section {
