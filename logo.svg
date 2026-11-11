@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Ahsan Habib monogram">
+  <title>AH. — Ahsan Habib</title>
+  <rect width="100" height="100" rx="24" fill="#0A0A0B"/>
+  <g transform="translate(13.5 14) scale(0.72)">
+    <!-- one crossbar shared by the A and the H -->
+    <rect x="20" y="53" width="63" height="11" fill="#C6F135"/>
+    <!-- A: diagonal leg + the stem it shares with the H -->
+    <path fill="#EDEDE9" d="M2 88 L15 88 L50 12 L37 12 Z"/>
+    <rect x="37" y="12" width="13" height="76" fill="#EDEDE9"/>
+    <!-- H: right stem -->
+    <rect x="70" y="12" width="13" height="76" fill="#EDEDE9"/>
+    <!-- the full stop from the wordmark -->
+    <circle cx="94" cy="81.5" r="6.5" fill="#C6F135"/>
+  </g>
+</svg>
